@@ -22,3 +22,4 @@ build
 bin/air
 
 dev-dist
+mymemos*.tar
