@@ -79,7 +79,9 @@
     "username": "用户名",
     "version": "版本",
     "visibility": "可见性",
-    "yourself": "您自己"
+    "yourself": "您自己",
+    "days": "天数",
+    "memos": "记录数"
   },
   "days": {
     "fri": "五",
