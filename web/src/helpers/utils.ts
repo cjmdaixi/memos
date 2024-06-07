@@ -4,6 +4,11 @@ export function absolutifyLink(rel: string): string {
   return anchor.href;
 }
 
+export function absolutifyPosterLink(rel: string): string {
+  let basePath = rel.split(".mp4")[0];
+  return basePath + "-poster.jpg";
+}
+
 export function getSystemColorScheme() {
   if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
     return "dark";

@@ -1,5 +1,6 @@
 import { memo } from "react";
 import { absolutifyLink } from "@/helpers/utils";
+import { absolutifyPosterLink } from "@/helpers/utils";
 import { Resource } from "@/types/proto/api/v2/resource_service";
 import { getResourceType, getResourceUrl } from "@/utils/resource";
 import MemoResource from "./MemoResource";
@@ -46,8 +47,9 @@ const MemoResourceListView = ({ resources = [] }: { resources: Resource[] }) => 
       return (
         <video
           className="cursor-pointer w-full h-full object-contain bg-zinc-100 dark:bg-zinc-800"
-          preload="metadata"
+          preload="none"
           crossOrigin="anonymous"
+          poster={absolutifyPosterLink(url)}
           src={absolutifyLink(url)}
           controls
         />
